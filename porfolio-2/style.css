@@ -1,0 +1,369 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+.sidebar{
+    margin-top: 50px;
+    position: fixed;
+    top: 0%;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+.navbar .homee{
+    color: rgb(39, 138, 245);
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a{
+    margin-right: 30px;
+    font-size: 22px;
+    font-weight: 550;
+    color: black;
+
+}
+.bar a{
+    font-size: 35px;
+    color: black;
+}
+.bar{
+    display: none;
+}
+
+.header-logo{
+    font-size: 35px;
+    font-weight: 900;
+}
+.header-logo a{
+    color: rgb(39, 138, 245);
+}
+.header-logo a:hover,.navbar a:hover{
+    color: rgb(39, 138, 245);
+}
+.padding{
+    padding: 15px 20px;
+}
+
+.profile-img img,.sub-img{
+    width: 700px;
+    object-fit: contain;
+}
+.last-img img{
+    width: 280px;
+    border-radius: 50%;
+    border: 6px solid rgb(39, 138, 245);
+    margin-bottom: 20px;
+}
+.hero,.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home h2{
+    font-size: 60px;
+}
+.home h1{
+    font-size: 50px;
+    color: rgb(39, 138, 245);
+}
+.home h5{
+    font-size: 30px;
+}
+.home .social-links a,.social-links a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 20px 10px 20px 0;
+    color: black;
+}
+
+.social-links a:hover{
+    color: rgb(39, 138, 245);
+    border-color: rgb(39, 138, 245);
+}
+
+ .more-about{
+    border: 2px solid black;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: black;
+}
+.more-about:hover{
+color: rgb(39, 138, 245);
+border-color: rgb(39, 138, 245);
+}
+.heading h2{
+    font-size: 50px;
+    text-align: center;
+}
+.heading span{
+    color: rgb(39, 138, 245);
+}
+#text{
+    color: rgb(39, 138, 245);
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.about{
+    margin-top: 3rem;
+}
+.about-text h5 span{
+    color: rgb(39, 138, 245);
+}
+
+.margin{
+    margin-top: 3rem;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+.skills{
+    margin: 20px 0;
+}
+.skills li{
+    margin-bottom: 20px;
+}
+.bars{
+    display: block;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(25, 8, 25, 1);
+    width: 800px;
+}
+.bars span{
+    height: 20px;
+    float: left;
+    background-color: rgb(39, 138, 245);
+}
+.html{
+    width: 90%;
+    animation: html .3s;
+}
+.css{
+    width: 75%;
+    animation: css .3s;
+}
+.js{
+    width: 60%;
+    animation: js .3s;
+}
+.bs{
+    width: 75%;
+    animation: bs .3s;
+}
+.bt{
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.m-bottom{
+    margin-bottom: 25px;
+}
+.reach{
+    margin-top: 20px;
+}
+.reach p{
+    color: gray;
+    font-size: 20px;
+}
+.Karachi{
+    color: black;
+    font-size: 22px;
+}
+.location{
+    font-size: 22px;
+}
+
+.more-about{
+    transform: translateY(-12px);
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes bs{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+
+
+
+@media screen and (max-width:1200px) {
+    .navbar{
+        display: none;
+    }
+    .bar{
+        display: inline-block;
+    }
+}
+@media screen and (max-width:992px){
+    .home h2{
+        font-size: 40px;
+    }
+    .home h1{
+        font-size: 30px;
+        color: rgb(39, 138, 245);
+    }
+    .home h5{
+        font-size: 20px;
+    }
+    .sub-img{
+        width: 600px;
+        object-fit: contain;
+    }
+    .profile-img img{
+        width: 430px;
+        object-fit: contain; 
+    }
+    .hero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .bars{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .hero,.about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+    .home h2{
+        font-size: 50px;
+    }
+    .home h1{
+        font-size: 40px;
+        color: rgb(39, 138, 245);
+    }
+    .home h5{
+        font-size: 30px;
+    }
+    .profile-img img,.sub-img{
+        width: 600px;
+        object-fit: contain;
+    }
+    .profile-img img{
+        margin-top: 15px;
+    }
+
+    .bars{
+        width: 550px;
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width:600px){
+    
+    .profile-img img,.sub-img{
+        width: 400px;
+        object-fit: contain;
+    }
+   
+    .hero{
+        margin: auto;
+    }
+    .home h2{
+        font-size: 35px;
+    }
+    .home h1{
+        font-size: 25px;
+        color: rgb(39, 138, 245);
+    }
+    .home h5{
+        font-size: 20px;
+    }
+    .about-text{
+        margin: auto;
+    }
+
+    .bars{
+        width: 400px;
+    }
+    .hero{
+        margin-top: 20px;
+    }
+    #text{
+        color: rgb(39, 138, 245);
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    .bars{
+        width: 260px;
+    }
+    .profile-img img,.sub-img{
+        width: 320px;
+        object-fit: contain;
+    }
+}
